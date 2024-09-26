@@ -1,13 +1,13 @@
 import React from "react";
-import employeeMSImage from "../assets/employee-ms.png";
+import news from "../assets/news.png";
 import bookMSImage from "../assets/admin-dashboard.png";
-
+import pass from '../assets/password.png'
 const projects = [
   {
     id: 1,
     name: "News Web App",
     technologies: "Integrated APIs to display daily current news updates using React.js",
-    image: employeeMSImage,
+    image: news,
     github: "https://github.com/suvasanpui/projectReact/tree/main/newsapp",
   },
   {
@@ -21,7 +21,7 @@ const projects = [
     id: 3,
     name: "Password Generator",
     technologies: "Create password generator application where implemented functionality to generate character only or mix chaacter and number",
-    image: employeeMSImage,
+    image: pass,
     github: "https://github.com/suvasanpui/projectReact/tree/main/passwordgenerator03",
   },
 ];
