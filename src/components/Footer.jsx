@@ -32,7 +32,7 @@ const Footer = () => {
             <a href="#" className="text-gray-400 hover:text-white">
               <FaTwitter />
             </a>
-            <a href="https://www.linkedin.com/in/suva-sanpui-1668b2231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="text-gray-400 hover:text-white">
+            <a href="https://linkedin.com/in/suva-sanpui">
               <FaLinkedin />
             </a>
             <a href="https://github.com/suvasanpui" className="text-gray-400 hover:text-white">

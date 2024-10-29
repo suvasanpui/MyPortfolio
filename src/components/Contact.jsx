@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaEnvelope, FaMapMarkedAlt, FaPhone } from 'react-icons/fa'
+import { FaEnvelope, FaLinkedin, FaMapMarkedAlt, FaPhone } from 'react-icons/fa'
 
 const Contact = () => {
   return (
@@ -23,9 +23,14 @@ const Contact = () => {
                 <span>+91 7479108631</span>
             </div>
             <div className='mb-4'>
-                <FaMapMarkedAlt className='inline-block text-green-400 mr-2'></FaMapMarkedAlt>
-                <span>Diamond Harbour, 24 parganas(South), West Bengal, India , 743375</span>
+                <FaLinkedin className="inline-block text-green-400 mr-2" />
+                <span><a href='https://linkedin.com/in/suva-sanpui'>Linkedin</a></span>
             </div>
+            <div className='mb-4'>
+                <FaMapMarkedAlt className='inline-block text-green-400 mr-2'></FaMapMarkedAlt>
+                <span>Diamond Harbour, Kolkata, West Bengal, India , 743375</span>
+            </div>
+
           </div>
           <div className='flex-1 w-full'>
             <form className='space-y-4'>
