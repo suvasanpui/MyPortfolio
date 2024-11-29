@@ -3,44 +3,36 @@ import news from "../assets/news.png";
 import bookMSImage from "../assets/admin-dashboard.png";
 import pass from "../assets/password.png";
 import weather from "../assets/weather.png";
+import vote from "../assets/vote.jpg";
 const projects = [
   {
     id: 1,
-    name: "News Web App",
+    name: "Voting System",
     technologies:
-      "Integrated APIs to display daily current news updates using React.js",
-    image: news,
-    github: "https://github.com/suvasanpui/projectReact/tree/main/newsapp",
-    view:"#",
+      "A secure and user-authenticated voting system built with Node.js, Express, and MongoDB, designed for seamless and reliable voting processes",
+    image: vote,
+    github: "https://github.com/suvasanpui/vote_now",
+    view: "https://vote-now-71kj-ui.vercel.app/",
   },
   {
     id: 2,
-    name: "Currency Convrter",
-    technologies: "Integrated real time currency exchange rates using APIs",
-    image: bookMSImage,
-    github:
-      "https://github.com/suvasanpui/projectReact/tree/main/currencyconverter",
-    view:"#",
+    name: "Weather Forecast Application",
+    technologies:
+      "A real-time weather forecast application built with React, Tailwind CSS, and Axios, providing accurate weather updates based on user location",
+    image: weather,
+    github: "https://github.com/suvasanpui/weatherForecast",
+    view: "https://expert-weather-report.netlify.app/",
   },
   {
     id: 3,
-    name: "Password Generator",
+    name: "Real-Time Web Application",
     technologies:
-      "Create password generator application where implemented functionality to generate character only or mix chaacter and number",
-    image: pass,
-    github:
-      "https://github.com/suvasanpui/projectReact/tree/main/passwordgenerator03",
-    view:"#",
+      "dynamic news web application built with React, delivering the latest updates and articles from various sources in real-time",
+    image: news,
+    github: "https://github.com/suvasanpui/projectReact/tree/main/newsapp",
+    view: "#",
   },
-  {
-    id: 4,
-    name: "Weather Forecast",
-    technologies:
-      "Developed a weather forecast web application using React for an interactive UI, Tailwind CSS for responsive design, and Axios to fetch real-time weather data. The app allows users to check current weather conditions, temperature, and humidity for any city worldwide, providing a clean and user-friendly interface optimized for both mobile and desktop",
-    image: weather,
-    github: "https://github.com/suvasanpui/weatherForecast",
-  view:"https://expert-weather-report.netlify.app/",
-  },
+  
 ];
 
 const Projects = () => {
@@ -66,18 +58,18 @@ const Projects = () => {
               <a
                 href={project.github}
                 className="inline-block bg-gradient-to-r 
-              from-green-400 to-blue-500 text-white px-4 py-2 rounded-full"
+              from-yellow-400 to-blue-500 text-white px-4 py-2 rounded-full"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 GitHub
               </a>
-              <br/>
-              <br/>
+              <br />
+              <br />
               <a
                 href={project.view}
                 className="inline-block bg-gradient-to-r 
-              from-green-400 to-blue-500 gap-5 text-white px-6 py-2 rounded-full"
+              from-yellow-400 to-blue-500 gap-5 text-white px-6 py-2 rounded-full"
                 target="_blank"
                 rel="noopener noreferrer"
               >

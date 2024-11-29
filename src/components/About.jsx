@@ -14,15 +14,42 @@ const About = () => {
           />
           <div className="flex-1">
             <p className="text-lg mb-8">
-              I am a intermediate-level full-stack developer with a focus on building
-              modern and responsive web applications. With a strong foundation
-              in the MERN stack.good understanding of DSA,DBMS,OS and OOPs.Proficent in Java C#.I strive to create
-              seamless and efficient user experiences.
+              I am Suva Sanpui, a dedicated MERN Stack Developer with a strong
+              foundation in web development. With expertise in MongoDB,
+              Express.js, React, and Node.js, I build dynamic and scalable
+              applications that provide seamless user experiences. My journey in
+              web development has been fueled by a deep passion for coding and
+              problem-solving. I enjoy tackling challenges and transforming them
+              into functional, high-performance solutions. Always eager to
+              learn, I stay updated with the latest technologies and best
+              practices to deliver modern, efficient web solutions.
             </p>
             <div className="space-y-4">
               <div className="flex items-center">
                 <label htmlFor="htmlandcss" className="w-2/12">
-                  HTML & CSS
+                  React.js
+                </label>
+                <div className="grow bg-gray-800 rounded-full h-2.5">
+                  <div
+                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
+                    transform transition-transform duration-300 hover:scale-105 w-11/12"
+                  ></div>
+                </div>
+              </div>
+              <div className="flex items-center">
+                <label htmlFor="htmlandcss" className="w-2/12">
+                  Node.js
+                </label>
+                <div className="grow bg-gray-800 rounded-full h-2.5">
+                  <div
+                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
+                    transform transition-transform duration-300 hover:scale-105 w-11/12"
+                  ></div>
+                </div>
+              </div>
+              <div className="flex items-center">
+                <label htmlFor="htmlandcss" className="w-2/12">
+                  Express.js
                 </label>
                 <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div
@@ -42,39 +69,7 @@ const About = () => {
                   ></div>
                 </div>
               </div>
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  React
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-9/12"
-                  ></div>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  Node
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-9/12"
-                  ></div>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  Express
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-9/12"
-                  ></div>
-                </div>
-              </div>
+
               <div className="flex items-center">
                 <label htmlFor="htmlandcss" className="w-2/12">
                   MongoDB
@@ -82,10 +77,23 @@ const About = () => {
                 <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div
                     className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-9/12"
+                    transform transition-transform duration-300 hover:scale-105 w-11/12"
                   ></div>
                 </div>
               </div>
+
+              <div className="flex items-center">
+                <label htmlFor="htmlandcss" className="w-2/12">
+                  HTML & CSS
+                </label>
+                <div className="grow bg-gray-800 rounded-full h-2.5">
+                  <div
+                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
+                    transform transition-transform duration-300 hover:scale-105 w-11/12"
+                  ></div>
+                </div>
+              </div>
+
               <div className="flex items-center">
                 <label htmlFor="htmlandcss" className="w-2/12">
                   Java
@@ -93,7 +101,7 @@ const About = () => {
                 <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div
                     className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-9/12"
+                    transform transition-transform duration-300 hover:scale-105 w-8/12"
                   ></div>
                 </div>
               </div>
@@ -104,7 +112,7 @@ const About = () => {
                 <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div
                     className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-9/12"
+                    transform transition-transform duration-300 hover:scale-105 w-11/12"
                   ></div>
                 </div>
               </div>
