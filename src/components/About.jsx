@@ -13,7 +13,7 @@ const About = () => {
             className="w-72 h-80 rounded object-cover mb-8 md:mb-0"
           />
           <div className="flex-1">
-            <p className="text-lg mb-8">
+            <p className="text-lg mb-8 text-gray-100">
               I am Suva Sanpui, a dedicated MERN Stack Developer with a strong
               foundation in web development. With expertise in MongoDB,
               Express.js, React, and Node.js, I build dynamic and scalable
@@ -26,7 +26,7 @@ const About = () => {
             </p>
             <div className="space-y-4">
               <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
+                <label htmlFor="htmlandcss" className="w-3/12">
                   React.js
                 </label>
                 <div className="grow bg-gray-800 rounded-full h-2.5">
@@ -37,7 +37,7 @@ const About = () => {
                 </div>
               </div>
               <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
+                <label htmlFor="htmlandcss" className="w-3/12">
                   Node.js
                 </label>
                 <div className="grow bg-gray-800 rounded-full h-2.5">
@@ -48,7 +48,7 @@ const About = () => {
                 </div>
               </div>
               <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
+                <label htmlFor="htmlandcss" className="w-3/12">
                   Express.js
                 </label>
                 <div className="grow bg-gray-800 rounded-full h-2.5">
@@ -59,7 +59,7 @@ const About = () => {
                 </div>
               </div>
               <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
+                <label htmlFor="htmlandcss" className="w-3/12">
                   Javascrip
                 </label>
                 <div className="grow bg-gray-800 rounded-full h-2.5">
@@ -71,7 +71,7 @@ const About = () => {
               </div>
 
               <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
+                <label htmlFor="htmlandcss" className="w-3/12">
                   MongoDB
                 </label>
                 <div className="grow bg-gray-800 rounded-full h-2.5">
@@ -83,7 +83,7 @@ const About = () => {
               </div>
 
               <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
+                <label htmlFor="htmlandcss" className="w-3/12">
                   HTML & CSS
                 </label>
                 <div className="grow bg-gray-800 rounded-full h-2.5">
@@ -95,7 +95,7 @@ const About = () => {
               </div>
 
               <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
+                <label htmlFor="htmlandcss" className="w-3/12">
                   Java
                 </label>
                 <div className="grow bg-gray-800 rounded-full h-2.5">
@@ -106,7 +106,7 @@ const About = () => {
                 </div>
               </div>
               <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
+                <label htmlFor="htmlandcss" className="w-3/12">
                   MySQL
                 </label>
                 <div className="grow bg-gray-800 rounded-full h-2.5">
