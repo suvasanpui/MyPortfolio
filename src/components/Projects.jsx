@@ -1,7 +1,5 @@
 import React from "react";
 import news from "../assets/news.png";
-import bookMSImage from "../assets/admin-dashboard.png";
-import pass from "../assets/password.png";
 import weather from "../assets/weather.png";
 import vote from "../assets/vote.jpg";
 const projects = [
@@ -25,7 +23,7 @@ const projects = [
   },
   {
     id: 3,
-    name: "Real-Time Web Application",
+    name: "Real-Time  News Web Application",
     technologies:
       "dynamic news web application built with React, delivering the latest updates and articles from various sources in real-time",
     image: news,
