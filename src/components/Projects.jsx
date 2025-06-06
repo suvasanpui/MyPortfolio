@@ -1,4 +1,3 @@
-import React from "react";
 import news from "../assets/news.png";
 import weather from "../assets/weather.png";
 import vote from "../assets/vote.jpg";
@@ -30,7 +29,6 @@ const projects = [
     github: "https://github.com/suvasanpui/projectReact/tree/main/newsapp",
     view: "#",
   },
-  
 ];
 
 const Projects = () => {
@@ -38,41 +36,46 @@ const Projects = () => {
     <div className="bg-black text-white py-20" id="project">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <h2 className="text-4xl font-bold text-center mb-12">My Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="bg-gray-800 p-6 rounded-lg hover:shadow-lg 
+              className="bg-gray-800 p-4 rounded-lg hover:shadow-lg 
             transform transition-transform duration-300 hover:scale-105"
             >
               <img
                 src={project.image}
                 alt={project.name}
                 className="rounded-lg mb-4 
-              w-full h-48 object-cover"
+              w-full h-40 object-cover"
               />
               <h3 className="text-2xl font-bold mb-2">{project.name}</h3>
               <p className="text-gray-400 mb-4">{project.technologies}</p>
-              <a
-                href={project.github}
-                className="inline-block bg-gradient-to-r 
+              <div className="flex gap-5 items-center">
+                <div>
+                  <a
+                    href={project.github}
+                    className="inline-block bg-gradient-to-r 
               from-yellow-400 to-blue-500 text-white px-4 py-2 rounded-full"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-              <br />
-              <br />
-              <a
-                href={project.view}
-                className="inline-block bg-gradient-to-r 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+                </div>
+
+                <div>
+                  <a
+                    href={project.view}
+                    className="inline-block bg-gradient-to-r 
               from-yellow-400 to-blue-500 gap-5 text-white px-6 py-2 rounded-full"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View
-              </a>
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View
+                  </a>
+                </div>
+              </div>
             </div>
           ))}
         </div>

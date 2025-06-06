@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,50 +40,47 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <div
-          className={`md:flex md:space-x-6 items-center ${
+          className={`lg:flex lg:space-x-6 items-center  ${
             isOpen ? "block" : "hidden"
           } absolute md:relative top-16 md:top-0 right-8 md:right-0 w-64 md:w-auto 
           bg-gray-800 md:bg-transparent p-4 md:p-0 rounded-lg text-white
           md:space-x-4 md:flex md:justify-end z-50`}
         >
-          <a
-            href="#home"
-            className="block md:inline hover:text-blue-600 py-2 md:py-0"
-          >
-            Home
-          </a>
-          <a
-            href="#about"
-            className="block md:inline hover:text-blue-600 py-2 md:py-0"
-          >
-            About Me
-          </a>
-          <a
-            href="#service"
-            className="block md:inline hover:text-blue-600 py-2 md:py-0"
-          >
-            Education
-          </a>
-          <a
-            href="#project"
-            className="block md:inline hover:text-blue-600 py-2 md:py-0"
-          >
-            Projects
-          </a>
-          <a
-            href="#contact"
-            className="block md:inline hover:text-blue-600 py-2 md:py-0"
-          >
-            Contact
-          </a>
-          <button
-            className="bg-gradient-to-r from-green-400 to-blue-500 text-white hidden md:inline
-                transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full"
-          >
-            <a href="#contact" className="hover:text-gray-400">
-              Contact Me
+          <div className=" font-semibold">
+            <a
+              href="#home"
+              className="block md:inline hover:text-blue-600 py-2 md:m-4 "
+            >
+              Home
             </a>
-          </button>
+            <a
+              href="#about"
+              className="block md:inline hover:text-blue-600 py-2 md:py-0  md:m-4"
+            >
+              About Me
+            </a>
+            <a
+              href="#service"
+              className="block md:inline hover:text-blue-600 py-2 md:py-0  md:m-4"
+            >
+              Education
+            </a>
+            <a
+              href="#project"
+              className="block md:inline hover:text-blue-600 py-2 md:py-0  md:m-4"
+            >
+              Projects
+            </a>
+
+            <button
+              className="bg-gradient-to-r from-green-400 to-blue-500 text-white hidden md:inline
+                transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full"
+            >
+              <a href="#contact" className="hover:text-gray-400">
+                Contact Me
+              </a>
+            </button>
+          </div>
         </div>
       </div>
     </nav>
