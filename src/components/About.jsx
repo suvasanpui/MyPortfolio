@@ -38,6 +38,7 @@ const About = () => {
                 "HTML & CSS",
                 "Java",
                 "MySQL",
+                "Firebase"
               ].map((skill) => (
                 <div
                   className="flex items-center bg-gray-800 p-4 rounded-lg shadow-md hover:bg-gray-700 transition-colors duration-300"
