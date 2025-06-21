@@ -18,9 +18,13 @@ const services = [
 ];
 const Service = () => {
   return (
-    <div className="bg-black text-white py-20" id="service">
+    <div className="bg-[#1B1B1E] text-white py-20" id="service">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
-        <h2 className="text-4xl font-bold text-center mb-12">My Services</h2>
+        <h2 className="text-4xl font-bold text-center mb-12">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
+            My Services
+          </span>
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
             <div

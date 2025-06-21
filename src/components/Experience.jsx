@@ -28,21 +28,21 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <div className="bg-black text-white py-12 sm:py-20" id="experience">
+    <div className="bg-[#1B1B1E] text-white py-12 sm:py-20" id="experience">
       <div className="container mx-auto px-4 sm:px-8 md:px-16 lg:px-24">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 px-4">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
             My Experience
           </span>
         </h2>
-        <div className="space-y-6 sm:space-y-8">
+        <div className="space-y-6 sm:space-y-8 ">
           {experiences.map((exp) => (
             <div
               key={exp.id}
               className="bg-gray-800/50 p-4 sm:p-6 rounded-xl hover:shadow-xl transform 
-              transition-all duration-300 hover:scale-[1.02] border border-gray-700"
+              transition-all duration-300 hover:scale-[1.02] border border-gray-700 grid grid-cols-1 "
             >
-              <div className="flex flex-col mb-3 sm:mb-4">
+              <div className=" mb-3 sm:mb-4">
                 <div className="mb-2 sm:mb-0">
                   <h3 className="text-xl sm:text-2xl font-bold text-transparent bg-clip-text 
                     bg-gradient-to-r from-green-400 to-blue-500">

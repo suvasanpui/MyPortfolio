@@ -2,9 +2,15 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [active, setActive] = useState("home");
+
+  const handleSetActive = (section) => {
+    setActive(section);
+    setIsOpen(false); // close menu on mobile after click
+  };
 
   return (
-    <nav className="bg-black text-white px-8 md:px-16 lg:px-24">
+    <nav className="bg-[#1B1B1E] text-white px-8 md:px-16 lg:px-24">
       <div className="container py-2 flex justify-between items-center">
         <div className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-yellow-500 text-3xl font-bold">
           Suva
@@ -49,34 +55,72 @@ const Navbar = () => {
           <div className=" font-semibold">
             <a
               href="#home"
-              className="block md:inline hover:text-blue-600 py-2 md:m-4 "
+              onClick={() => handleSetActive("home")}
+              className={`group relative block md:inline hover:text-green-500 py-2 md:m-4 transition-all duration-200 transform hover:scale-105 ${
+                active === "home" ? "text-green-300 font-bold scale-110" : ""
+              }`}
             >
               Home
+              <span
+                className={`absolute left-0 -bottom-1 h-0.5 bg-green-400 transition-all duration-300 origin-left w-0 group-hover:w-full ${
+                  active === "home" ? "w-full" : ""
+                }`}
+              />
             </a>
             <a
               href="#about"
-              className="block md:inline hover:text-blue-600 py-2 md:py-0  md:m-4"
+              onClick={() => handleSetActive("about")}
+              className={`group relative block md:inline hover:text-green-500 py-2 md:py-0  md:m-4 transition-all duration-200 transform hover:scale-105 ${
+                active === "about" ? "text-green-300 font-bold scale-110" : ""
+              }`}
             >
               About Me
+              <span
+                className={`absolute left-0 -bottom-1 h-0.5 bg-green-400 transition-all duration-300 origin-left w-0 group-hover:w-full ${
+                  active === "about" ? "w-full" : ""
+                }`}
+              />
             </a>
             <a
               href="#service"
-              className="block md:inline hover:text-blue-600 py-2 md:py-0  md:m-4"
+              onClick={() => handleSetActive("service")}
+              className={`group relative block md:inline hover:text-green-500 py-2 md:py-0  md:m-4 transition-all duration-200 transform hover:scale-105 ${
+                active === "service" ? "text-green-300 font-bold scale-110" : ""
+              }`}
             >
               Education
+              <span
+                className={`absolute left-0 -bottom-1 h-0.5 bg-green-400 transition-all duration-300 origin-left w-0 group-hover:w-full ${
+                  active === "service" ? "w-full" : ""
+                }`}
+              />
             </a>
             <a
               href="#project"
-              className="block md:inline hover:text-blue-600 py-2 md:py-0  md:m-4"
+              onClick={() => handleSetActive("project")}
+              className={`group relative block md:inline hover:text-green-500 py-2 md:py-0  md:m-4 transition-all duration-200 transform hover:scale-105 ${
+                active === "project" ? "text-green-300 font-bold scale-110" : ""
+              }`}
             >
               Projects
+              <span
+                className={`absolute left-0 -bottom-1 h-0.5 bg-green-400 transition-all duration-300 origin-left w-0 group-hover:w-full ${
+                  active === "project" ? "w-full" : ""
+                }`}
+              />
             </a>
 
             <button
               className="bg-gradient-to-r from-green-400 to-blue-500 text-white hidden md:inline
                 transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full"
+              onClick={() => handleSetActive("contact")}
             >
-              <a href="#contact" className="hover:text-gray-400">
+              <a
+                href="#contact"
+                className={`hover:text-white ${
+                  active === "contact" ? "text-white font-bold" : ""
+                }`}
+              >
                 Contact Me
               </a>
             </button>

@@ -13,7 +13,7 @@ const projects = [
   },
   {
     id: 2,
-    name: "Weather Forecast Application",
+    name: "Weather Application",
     technologies:
       "A real-time weather forecast application built with React, Tailwind CSS, and Axios, providing accurate weather updates based on user location",
     image: weather,
@@ -33,9 +33,13 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="bg-black text-white py-20" id="project">
+    <div className="bg-[#1B1B1E] text-white py-20" id="project">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
-        <h2 className="text-4xl font-bold text-center mb-12">My Projects</h2>
+        <h2 className="text-4xl font-bold text-center mb-12">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
+            My Projects
+          </span>
+        </h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div
